@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="智能电力监测仪">
+  <defs>
+    <linearGradient id="g" x1="32" y1="32" x2="224" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c7dff"/>
+      <stop offset="1" stop-color="#23d3ff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.55 0" result="c"/>
+      <feMerge>
+        <feMergeNode in="c"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="44" y="36" width="168" height="184" rx="22" fill="rgba(5,8,22,0.85)" stroke="url(#g)" stroke-width="4"/>
+  <rect x="68" y="62" width="120" height="78" rx="12" fill="rgba(35,211,255,0.06)" stroke="rgba(35,211,255,0.35)" stroke-width="2"/>
+  <path d="M80 124 L104 104 L126 118 L150 90 L176 110" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cx="104" cy="104" r="4" fill="#23d3ff"/>
+  <circle cx="150" cy="90" r="4" fill="#3c7dff"/>
+  <g opacity="0.9">
+    <rect x="76" y="158" width="104" height="10" rx="5" fill="rgba(245,246,251,0.12)"/>
+    <rect x="76" y="176" width="84" height="10" rx="5" fill="rgba(245,246,251,0.10)"/>
+    <rect x="76" y="194" width="64" height="10" rx="5" fill="rgba(245,246,251,0.08)"/>
+  </g>
+</svg>
+

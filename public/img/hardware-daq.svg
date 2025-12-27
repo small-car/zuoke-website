@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="电力数据采集器">
+  <defs>
+    <linearGradient id="g" x1="28" y1="28" x2="228" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c7dff"/>
+      <stop offset="1" stop-color="#23d3ff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.5 0" result="c"/>
+      <feMerge>
+        <feMergeNode in="c"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="52" y="44" width="152" height="168" rx="22" fill="rgba(5,8,22,0.85)" stroke="url(#g)" stroke-width="4"/>
+  <g opacity="0.95">
+    <rect x="74" y="72" width="108" height="20" rx="10" fill="rgba(245,246,251,0.10)"/>
+    <rect x="74" y="102" width="76" height="12" rx="6" fill="rgba(245,246,251,0.08)"/>
+    <rect x="74" y="122" width="92" height="12" rx="6" fill="rgba(245,246,251,0.08)"/>
+  </g>
+  <path d="M88 176 H168" stroke="rgba(245,246,251,0.18)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M104 176 H152" stroke="url(#g)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M128 156 V196" stroke="rgba(35,211,255,0.35)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="128" cy="156" r="4" fill="#23d3ff"/>
+  <circle cx="128" cy="196" r="4" fill="#3c7dff"/>
+</svg>
+

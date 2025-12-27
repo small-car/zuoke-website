@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img" aria-label="首页背景">
+  <defs>
+    <radialGradient id="r1" cx="25%" cy="20%" r="80%">
+      <stop offset="0" stop-color="#3c7dff" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#23d3ff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="85%" cy="70%" r="70%">
+      <stop offset="0" stop-color="#23d3ff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gLine" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c7dff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#23d3ff" stop-opacity="0.55"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#23d3ff" stroke-opacity="0.08" stroke-width="1"/>
+      <path d="M0 0H64" fill="none" stroke="#f5f6fb" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.55 0" result="c"/>
+      <feMerge>
+        <feMergeNode in="c"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#050816"/>
+  <rect width="1920" height="1080" fill="url(#r1)"/>
+  <rect width="1920" height="1080" fill="url(#r2)"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.95"/>
+
+  <!-- network lines -->
+  <g fill="none" stroke="url(#gLine)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.65" filter="url(#glow)">
+    <path d="M240 820 C420 660, 520 600, 680 520 C820 450, 980 360, 1200 310 C1420 260, 1610 250, 1760 240"/>
+    <path d="M190 280 C360 360, 520 410, 700 520 C860 618, 1040 700, 1260 760 C1480 820, 1660 840, 1780 860"/>
+    <path d="M520 960 C700 880, 860 820, 980 740 C1120 650, 1300 610, 1500 590 C1680 570, 1800 540, 1880 500"/>
+  </g>
+
+  <!-- nodes -->
+  <g>
+    <g fill="rgba(35,211,255,0.18)" stroke="rgba(35,211,255,0.60)" stroke-width="2">
+      <circle cx="240" cy="820" r="10"/>
+      <circle cx="520" cy="600" r="8"/>
+      <circle cx="680" cy="520" r="10"/>
+      <circle cx="980" cy="360" r="10"/>
+      <circle cx="1200" cy="310" r="12"/>
+      <circle cx="1760" cy="240" r="10"/>
+      <circle cx="190" cy="280" r="10"/>
+      <circle cx="520" cy="410" r="8"/>
+      <circle cx="860" cy="618" r="10"/>
+      <circle cx="1260" cy="760" r="10"/>
+      <circle cx="1780" cy="860" r="10"/>
+      <circle cx="520" cy="960" r="10"/>
+      <circle cx="980" cy="740" r="10"/>
+      <circle cx="1500" cy="590" r="12"/>
+      <circle cx="1880" cy="500" r="10"/>
+    </g>
+    <g fill="#3c7dff" opacity="0.85" filter="url(#glow)">
+      <circle cx="1200" cy="310" r="3.5"/>
+      <circle cx="1500" cy="590" r="3.5"/>
+      <circle cx="680" cy="520" r="3.5"/>
+      <circle cx="240" cy="820" r="3"/>
+      <circle cx="190" cy="280" r="3"/>
+    </g>
+  </g>
+
+  <!-- subtle vignette -->
+  <radialGradient id="v" cx="50%" cy="50%" r="70%">
+    <stop offset="0.75" stop-color="#050816" stop-opacity="0"/>
+    <stop offset="1" stop-color="#050816" stop-opacity="0.55"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#v)"/>
+</svg>
+
